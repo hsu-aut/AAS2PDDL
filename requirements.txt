@@ -1,0 +1,8 @@
+# AAS2PDDL - Dependencies
+# Python 3.9+
+
+# BaSyx Python SDK for AAS handling
+basyx-python-sdk>=1.0.0
+
+# Unified Planning Framework for PDDL generation and solving
+unified-planning[fast-downward]>=1.0.0
