@@ -16,6 +16,7 @@ from unified_planning.shortcuts import (
     UserType, BoolType, Fluent, InstantaneousAction, Object, Problem, Not
 )
 from unified_planning.io import PDDLWriter
+from unified_planning.model.metrics import MinimizeSequentialPlanLength
 
 
 class UPFProblemBuilder:
@@ -270,6 +271,15 @@ class UPFProblemBuilder:
             count += 1
 
         print(f"\n[OK] {count} goals set\n")
+
+    def addPlanLengthMetric(self):
+        """Add a sequential-plan-length objective.
+
+        Without a quality metric an optimal planner cannot certify optimality,
+        so UPF reports the result as satisficing. With it, "optimal" means the
+        shortest plan (fewest sequential steps).
+        """
+        self.problem.add_quality_metric(MinimizeSequentialPlanLength())
 
     def exportPddl(self, outputDir: Path):
         """Export the UPF problem as PDDL files.

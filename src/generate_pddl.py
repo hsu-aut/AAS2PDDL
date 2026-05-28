@@ -169,6 +169,8 @@ def runSingle(inputDir: Path, outputDir: Path, args) -> Optional[Tuple[str, int]
     # Solve
     solveResult = None
     if args.solve:
+        if args.optimal:
+            builder.addPlanLengthMetric()
         print(f"\n  Solving with {'optimal' if args.optimal else 'satisficing'} planner...")
         status, length, result = solveProblem(builder.problem, args.planner, args.optimal)
         print(f"  Result: {status} ({length} steps)")
@@ -238,6 +240,8 @@ def runDSE(inputDir: Path, args):
 
         # Solve
         if args.solve:
+            if args.optimal:
+                builder.addPlanLengthMetric()
             print(f"\n  Solving ({('optimal' if args.optimal else 'satisficing')})...")
             status, length, solveResult = solveProblem(builder.problem, args.planner, args.optimal)
             result['status'] = status
