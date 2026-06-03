@@ -1,0 +1,112 @@
+[
+  {
+    "name": "base",
+    "gen_time_s": 0.3,
+    "plan_length": 35,
+    "lengths_consistent": true,
+    "status": "SOLVED_OPTIMALLY",
+    "wall_s": {
+      "median": 8.83,
+      "min": 8.56,
+      "max": 9.6
+    },
+    "fd_search_s": {
+      "median": 7.89,
+      "min": 7.74,
+      "max": 8.16
+    },
+    "fd_total_s": {
+      "median": 7.91,
+      "min": 7.75,
+      "max": 8.17
+    }
+  },
+  {
+    "name": "variant_a",
+    "gen_time_s": 0.264,
+    "plan_length": 35,
+    "lengths_consistent": true,
+    "status": "SOLVED_OPTIMALLY",
+    "wall_s": {
+      "median": 8.45,
+      "min": 8.15,
+      "max": 8.75
+    },
+    "fd_search_s": {
+      "median": 7.66,
+      "min": 7.39,
+      "max": 7.83
+    },
+    "fd_total_s": {
+      "median": 7.67,
+      "min": 7.4,
+      "max": 7.83
+    }
+  },
+  {
+    "name": "variant_b",
+    "gen_time_s": 0.269,
+    "plan_length": 65,
+    "lengths_consistent": true,
+    "status": "SOLVED_OPTIMALLY",
+    "wall_s": {
+      "median": 219.74,
+      "min": 214.23,
+      "max": 221.23
+    },
+    "fd_search_s": {
+      "median": 218.9,
+      "min": 213.4,
+      "max": 220.25
+    },
+    "fd_total_s": {
+      "median": 218.9,
+      "min": 213.41,
+      "max": 220.26
+    }
+  },
+  {
+    "name": "variant_c",
+    "gen_time_s": 0.364,
+    "plan_length": 59,
+    "lengths_consistent": true,
+    "status": "SOLVED_OPTIMALLY",
+    "wall_s": {
+      "median": 173.08,
+      "min": 166.69,
+      "max": 185.96
+    },
+    "fd_search_s": {
+      "median": 172.31,
+      "min": 165.87,
+      "max": 184.98
+    },
+    "fd_total_s": {
+      "median": 172.32,
+      "min": 165.87,
+      "max": 184.99
+    }
+  },
+  {
+    "name": "variant_d",
+    "gen_time_s": 0.316,
+    "plan_length": 35,
+    "lengths_consistent": true,
+    "status": "SOLVED_OPTIMALLY",
+    "wall_s": {
+      "median": 7.65,
+      "min": 7.34,
+      "max": 7.94
+    },
+    "fd_search_s": {
+      "median": 6.83,
+      "min": 6.51,
+      "max": 7.11
+    },
+    "fd_total_s": {
+      "median": 6.83,
+      "min": 6.52,
+      "max": 7.12
+    }
+  }
+]
